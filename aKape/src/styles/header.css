@@ -1,0 +1,132 @@
+/* header.css */
+body {
+    height: 100%;
+    margin: 0;
+    padding-top: 3%;
+    overflow-y:scroll;
+    font-family: 'Poppins', sans-serif, bold;
+  }
+
+  header {
+    background: #846F5A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 996;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    height: 10%;
+    margin-bottom: 5%;
+  }
+  
+  .TODO {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 50px;
+    height: 100%;
+  }
+  
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+    height: 100%;
+  }
+  
+
+  /* Título */
+  .Titulo {
+    color: white;
+    font-size: 4em;
+    margin: 0;
+    font-family: 'Staatliches', sans-serif;
+    letter-spacing: 5px;
+  }
+
+  /* Centro con caja de búsqueda */
+  .caja{
+    background-color: #ffffff00;
+    width: 80%;
+    height: 45px;
+    border: 0px solid  rgba(104, 75, 62, 0);
+    border-radius: 6px;
+    display: flex;
+  }
+
+  .password{
+    background-color: #ffffff;
+    width: 90%;
+    height: 95%;
+    border: 0;
+    border-radius: 4px 0px 0px 4px;
+    text-align: left;
+    color: #1D1B1E;
+    font-size: 20px;
+    padding-left: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+  }
+  .password:focus{
+    outline: none;
+  }
+  .caja:has(.password:focus) {
+    box-shadow: 0px 0px 12px  rgb(104, 75, 62);
+}
+
+  .OcultMost{
+    background-color: #1D1B1E;
+    width: 10%;
+    height: 100%;
+    border: 0;
+    border-radius: 0px 4px 4px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .OcultMost:hover{
+    transition: 0.4s;
+    background-color: rgb(104, 75, 62);
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  iheader{
+    padding-top: 10px;
+    font-size: 250%;
+    cursor: pointer;
+  }
+
+  .icono-texto{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+  }
+  
+  .icono-admisho{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+  }

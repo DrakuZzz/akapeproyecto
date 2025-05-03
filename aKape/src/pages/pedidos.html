@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirmación de pedidos</title>
+  <link rel="stylesheet" href="/styles/pedido.css">
+
+</head>
+
+<body>
+  <h1>Actualizar estado del pedido</h1>
+
+  <div id="formulario-actualizacion">
+    <label for="pedido">Selecciona un pedido:</label>
+    <select id="pedido">
+      <option disabled selected></option>
+    </select>
+
+    <label for="estado">Nuevo estado:</label>
+    <select id="estado">
+      <option value="1">Enviado</option>
+      <option value="2">Entregado</option>
+    </select>
+
+    <label for="comentario">Comentario:</label>
+    <textarea id="comentario" rows="4" placeholder="Agrega un comentario..."></textarea>
+
+    <button id="enviar-actualizacion">Confirmar actualización</button>
+  </div>
+  <script src="/middleware/pedido.js"></script>
+</body>
+
+</html>
