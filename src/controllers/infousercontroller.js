@@ -28,7 +28,6 @@ export const getInfo = async (req, res) => {
         Cp: info[0].Cp || "",
         Descripcion: info[0].Descripcion || "",
       };
-      // Obtener todas las órdenes del cliente
       const ordenesQuery = `
         SELECT 
           o.Idorden, 
@@ -63,7 +62,6 @@ export const getOrden = async (req, res) => {
 
 
   try {
-    // Obtener detalles de una orden específica
     const ordenDetalleQuery = `
       SELECT 
         o.Idorden, 
@@ -73,7 +71,8 @@ export const getOrden = async (req, res) => {
         o.Fechaentrega, 
         o.Ordenestado, 
         o.Total, 
-        o.Tipopago, 
+        o.Tipopago,
+        o.ultimos_digitos AS ultimos, 
         d.Idproducto, 
         d.Cantidad, 
         d.Precio, 
@@ -127,6 +126,7 @@ export const getOrden = async (req, res) => {
       Ordenestado: ordenes[0].Ordenestado,
       Total: ordenes[0].Total,
       Tipopago: ordenes[0].Tipopago,
+      ultimos: ordenes[0].ultimos,
       ComentarioEnviado: comentarioEnviado,
       ComentarioEntregado: comentarioEntregado,
       productos: ordenes.map(row => ({
