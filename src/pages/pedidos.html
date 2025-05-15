@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirmación de pedidos</title>
+  <link rel="stylesheet" href="/styles/pedido.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Staatliches&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Cal+Sans&family=Staatliches&family=Teko:wght@300..700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="formulario-actualizacion">
+    <h1>Actualizar estado del pedido</h1>
+    <label for="pedido">Selecciona un pedido:</label>
+    <select id="pedido">
+      <option disabled selected></option>
+    </select>
+
+    <label for="estado">Nuevo estado:</label>
+    <select id="estado">
+      <option value="1">Enviado</option>
+      <option value="2">Entregado</option>
+    </select>
+
+    <label for="comentario">Comentario:</label>
+    <textarea id="comentario" rows="4" placeholder="Agrega un comentario..."></textarea>
+
+    <button id="obtenerdatos">Obtener datos del usuario</button>
+    <button id="enviar-actualizacion">Confirmar actualización</button>
+    <br>
+    <br>
+    <button id="logout">Cerrar Sesión</button>
+  </div>
+  <div id="datos">
+
+  </div>
+  <script src="/middleware/pedido.js"></script>
+</body>
+
+</html>

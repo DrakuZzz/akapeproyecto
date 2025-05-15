@@ -1,0 +1,245 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding-top: 3%;
+  overflow-y: scroll;
+  font-family: 'Poppins', sans-serif, bold;
+  background-color: whitesmoke;
+}
+
+header {
+  background: #f9f4e8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 990;
+  box-shadow: 0px 25px 20px -25px #6F4E37;
+  height: 9.5%;
+  margin-bottom: 5%;
+}
+
+.TODO {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 50px;
+  height: 100%;
+  margin-left: 40px;
+  gap: 60px;
+  i {
+    color: #6F4E37;
+    cursor: pointer;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 100px;
+  height: 100%;
+
+  i {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    font-size: 250%;
+    cursor: pointer;
+    color: #6F4E37;
+  }
+}
+
+i:hover {
+  transition: 0.4s;
+  color: #5a3e2b;
+}
+
+/* Título */
+.Titulo {
+  color: #6F4E37;
+  font-size: 4em;
+  margin: 0;
+  font-family: 'Staatliches', sans-serif;
+  letter-spacing: 5px;
+}
+
+/* Centro con caja de búsqueda */
+.caja {
+  background-color: transparent;
+  width: 75%;
+  height: 40px;
+  border: 0px solid rgba(104, 75, 62, 0);
+  border-radius: 6px;
+  display: flex;
+  z-index: 998;
+  position: relative;
+  border: 2px solid #6F4E37;
+}
+
+.password {
+  background-color: white;
+  width: 90%;
+  height: 95%;
+  border: 0;
+  border-radius: 4px 0px 0px 4px;
+  text-align: left;
+  color: #6F4E37;
+  font-size: 20px;
+  padding-left: 2%;
+  font-family: 'Poppins', sans-serif;
+  font-style: bold;
+}
+
+.password:focus {
+  outline: none;
+}
+
+.caja:has(.password:focus) {
+  box-shadow: 0px 0px 12px #6F4E37;
+}
+
+.OcultMost {
+  background-color: #6F4E37;
+  width: 10%;
+  height: 100%;
+  border: 0;
+  border-radius: 0px 2px 2px 0px;
+  color: whitesmoke;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.OcultMost:hover {
+  transition: 0.4s;
+  background-color: #5a3e2b;
+}
+
+a {
+  text-decoration: none;
+  color: #f9f4e8;
+}
+
+.icono-texto {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #6F4E37;
+}
+
+.icono-admisho {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #6F4E37;
+  margin-left: 100px;
+  gap: 2px;
+}
+
+.resultados {
+  padding-top: 10px;
+  position: absolute;
+  width: 74%;
+  top: 75%;
+  left: 13%;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  background: whitesmoke;
+  border-radius: 0 0 5px 5px;
+  border-bottom: 2px solid #6f4e3756;
+  border-left: 2px solid #6f4e3756;
+  border-right: 2px solid #6f4e3756;
+  overflow-y: auto;
+  clip-path: inset(0 round 0 0 5px 5px);
+  align-items: center;
+}
+
+.item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  background-color: transparent;
+  border-top: 2px solid #6f4e3756;
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  color: #6F4E37;;
+  box-sizing: border-box;
+}
+
+
+.price {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.name {
+  font-size: 20px;
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.page {
+  color: #1D1B1E;
+  letter-spacing: 2px;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 27px;
+}
+
+.ima {
+  width: 60px;
+}
+
+.infop {
+  color: #1D1B1E;
+  letter-spacing: 2px;
+  font-family: "Alegreya Sans", sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.exito{
+    background-color: #1D1B1E;
+}
+.exito:hover{
+    background-color: #1D1B1E;
+}

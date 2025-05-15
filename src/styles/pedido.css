@@ -1,0 +1,109 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#formulario-actualizacion {
+  margin-top: 20px;
+  border: 1px solid #cccccc00;
+  border-radius: 6px;
+  padding: 15px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #f9f4e8;
+  box-shadow: #6F4E37 0px 2px 8px 0px;
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+}
+
+#formulario-actualizacion label,
+#formulario-actualizacion select,
+#formulario-actualizacion button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  resize: none;
+}
+
+#formulario-actualizacion select{
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 16px;
+}
+
+#formulario-actualizacion textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 16px;
+  display: block;
+  width: 95.5%;
+  margin-top: 10px;
+  resize: none;
+}
+
+#formulario-actualizacion button {
+  background-color: #6F4E37;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#formulario-actualizacion button:hover {
+  background-color: #5a3e2b;
+}
+
+.datos {
+  margin-top: 20px;
+  border: 1px solid #cccccc00;
+  border-radius: 6px;
+  padding: 15px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #f9f4e8;
+  box-shadow: #6F4E37 0px 2px 8px 0px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 20px;
+}
+
+button {
+  background-color: #6F4E37;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #5a3e2b;
+}
+
+@media (min-width: 768px) {
+  #formulario-actualizacion,
+  .datos {
+    max-width: 500px;
+  }
+
+  button {
+    width: 20%;
+    align-self: center;
+  }
+}

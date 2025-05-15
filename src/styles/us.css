@@ -1,0 +1,112 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.about-box {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.ajaja {
+    font-family: 'Staatliches', cursive;
+    color: #6F4E37;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #6F4E37;
+}
+
+.jajaje {
+    color: #6F4E37;
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+
+.jajajo {
+    color: #6F4E37;
+    font-size: 1.4rem;
+    margin-top: 25px;
+    border-left: 4px solid #6F4E37;
+    padding-left: 15px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.pepe {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.6;
+}
+
+ul li:before {
+    content: "•";
+    color: #6F4E37;
+    font-size: 1.8rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.contact-section {
+    background-color: #f9f4e8;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.contact-section h3 {
+    border-left: none;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.contact-section p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fas {
+    margin-right: 10px;
+    color: #6F4E37;
+    min-width: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .about-box {
+        padding: 25px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-section p {
+        flex-wrap: wrap;
+    }
+}

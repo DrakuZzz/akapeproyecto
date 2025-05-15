@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+    <script src="https://kit.fontawesome.com/450178670c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/adduser.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <div id="sidebar"></div>
+    </div>
+    <div id="content">
+        <div class="container">
+            <div class="asidebar-right-content">
+                <div class="datos">
+                    <h1>Añadir usuario</h1>
+                    <label for="Email">Email:</label>
+                    <input type="text" id="Email" name="Email" required>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="Paterno">Paterno:</label>
+                    <input type="text" id="Paterno" name="Paterno" required>
+                    <label for="Materno">Materno:</label>
+                    <input type="text" id="Materno" name="Materno">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" required>
+                    <label for="rango">Rango:</label>
+                    <select id="rango" required>
+                        <option value="" selected hidden>Seleccionar rango</option>
+                        <option value="1">Administrador</option>
+                        <option value="3">Repartidor</option>
+                    </select>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <button type="submit" id="addUserBtn">Añadir usuario</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/middleware/adduser.js"></script>
+</body>
+
+</html>

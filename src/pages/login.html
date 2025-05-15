@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="/styles/forms.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body background="images/fondo.png">
+    <div class="container">
+        <form>
+            <center>
+                <img src="images/login.png">
+                <h1 class='titulo'>LOGIN</h1>
+                <div class="caja">
+                    <input type='text' id='Email' placeholder="Email" class='user' autocomplete="off" required>
+                </div>
+                <div class="caja">
+                    <input type='password' id='password' placeholder="Password" class='password' autocomplete="off"
+                        required>
+                    <input type='submit' id="viewPassword" value='🔒︎' name='OcultMost' class='OcultMost'>
+                </div>
+                <input type='submit' value='Login' name='Registrar' class='boton'>
+                <a href="/register">
+                    <h2 class="font">Don't have an account?<br>Login here</h2>
+                </a>
+            </center>
+        </form>
+    </div>
+    <script src="/middleware/login.js"></script>
+    <script src="/middleware/password.js"></script>
+</body>
+
+</html
