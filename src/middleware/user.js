@@ -462,7 +462,7 @@ async function orden(Idorden) {
       <p class="ordendetalle"><strong>Fecha de Orden:</strong> ${detalle.Fechaorden || ''}</p>
       <p class="ordendetalle"><strong>Fecha de Envío:</strong> ${detalle.Fechaenvio || ''}</p>
       <p class="ordendetalle"><strong>Tipo de Pago:</strong> ${detalle.Tipopago}</p>
-      ${detalle.Tipopago !== 'Transferencia' ? `<p class="ordendetalle"><strong>Últimos 3 dígitos:</strong> ${detalle.ultimos3}</p>` : ''}
+      ${detalle.Tipopago !== 'Transferencia' ? `<p class="ordendetalle"><strong>Últimos 3 dígitos:</strong> ${detalle.ultimos}</p>` : ''}
       <p class="ordendetalle"><strong>Total:</strong> $${detalle.Total}</p>
       <p class="ordendetalle"><strong>Fecha de Entrega:</strong> ${detalle.Fechaentrega || ''}</p>
     </div>
